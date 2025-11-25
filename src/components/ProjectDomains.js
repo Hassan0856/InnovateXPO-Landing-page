@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGraduationCap, FaLightbulb, FaCity, FaSeedling, FaTimes } from 'react-icons/fa';
+import { FaHeartbeat, FaLightbulb, FaCity, FaSeedling, FaTimes } from 'react-icons/fa';
 import Modal from './Modal';
 import './ProjectDomains.css';
 
@@ -9,17 +9,17 @@ const ProjectDomains = () => {
 
   const domains = [
     {
-      icon: <FaGraduationCap />,
-      title: 'Smart Education',
-      shortDesc: 'Revolutionary educational technologies transforming learning experiences',
-      fullDesc: 'Revolutionary educational technologies and learning platforms that transform how we teach and learn. Discover AI-powered tutoring systems, virtual reality classrooms, personalized learning solutions, and interactive educational tools that make learning accessible, engaging, and effective for everyone.',
+      icon: <FaHeartbeat />, // Medical/health icon
+      title: 'MedTech',
+      shortDesc: 'Innovative healthcare technologies improving patient care and medical practices',
+      fullDesc: 'Revolutionary medical technologies and healthcare innovations transforming patient care, diagnostics, and treatment. Discover AI-powered diagnostics, telemedicine platforms, wearable health devices, medical imaging solutions, and digital health records that make healthcare more accessible, accurate, and personalized for patients and providers.',
       features: [
-        'AI & Machine Learning in Education',
-        'Virtual & Augmented Reality Learning',
-        'Personalized Learning Platforms',
-        'Educational Analytics & Assessment',
+        'AI-Powered Diagnostics & Analysis',
+        'Telemedicine & Remote Patient Monitoring',
+        'Wearable Health Devices & IoT',
+        'Medical Imaging & Digital Health Records',
       ],
-      color: '#3b82f6',
+      color: '#10b981', // Green for healthcare
     },
     {
       icon: <FaLightbulb />,

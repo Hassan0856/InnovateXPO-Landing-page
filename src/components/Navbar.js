@@ -136,16 +136,6 @@ const Navbar = () => {
                   <a href={link.href}>{link.name}</a>
                 </motion.li>
               ))}
-              <motion.li variants={itemVariants}>
-                <a 
-                  href="https://forms.gle/UQsMYNe9ywoAVF7NA" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="mobile-cta"
-                >
-                  Register Now
-                </a>
-              </motion.li>
             </motion.ul>
           </motion.div>
         )}
@@ -155,4 +145,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
