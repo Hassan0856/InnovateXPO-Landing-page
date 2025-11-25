@@ -1,0 +1,73 @@
+.sponsors-bar {
+  margin-top: 150px;
+  background: linear-gradient(135deg, rgba(17, 24, 39, 0.6) 0%, rgba(26, 31, 58, 0.6) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(59, 130, 246, 0.15);
+  padding: 2rem 1.5rem;
+}
+
+.sponsors-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.sponsors-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.sponsor-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  filter: brightness(0.9) grayscale(0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-item:hover {
+  filter: brightness(1.1) grayscale(0);
+}
+
+.sponsor-logo {
+  height: 100px;           /* ✅ Increased from 70px */
+  width: auto;            /* Maintains aspect ratio */
+  max-width: 200px;       /* ✅ Increased from 120px */
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(59, 130, 246, 0.3));
+  transition: all 0.3s ease;
+}
+
+.sponsor-item:hover .sponsor-logo {
+  filter: drop-shadow(0 6px 20px rgba(59, 130, 246, 0.5));
+  transform: scale(1.05);  /* ✅ Added slight zoom on hover */
+}
+
+@media (max-width: 768px) {
+  .sponsors-logos {
+    gap: 2.5rem;
+  }
+
+  .sponsor-logo {
+    height: 70px;         /* ✅ Adjusted for tablets */
+    max-width: 150px;     /* ✅ Increased from 100px */
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsors-bar {
+    padding: 1.5rem 1rem;
+  }
+
+  .sponsors-logos {
+    gap: 2rem;
+  }
+
+  .sponsor-logo {
+    height: 60px;         /* ✅ Adjusted for mobile */
+    max-width: 120px;     /* ✅ Increased from 80px */
+  }
+}
