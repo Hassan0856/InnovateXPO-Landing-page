@@ -20,7 +20,6 @@ const Navbar = () => {
     { name: 'About', href: '#categories' },
     { name: 'Domains', href: '#project-expo' },
     { name: 'Shark Tank', href: '#shark-tank' },
-    { name: 'Food Fest', href: '#food-fest' },
   ];
 
   const menuVariants = {

@@ -19,22 +19,6 @@ const Hero = () => {
           <h1 className="event-name">InnovateXpo</h1>
         </motion.div>
 
-        {/* Organization Logos Collaboration */}
-        <motion.div
-          className="org-collaboration"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-        >
-          <div className="org-logo">
-            <img src="SUKHF_logo.png" alt="SU Knowledge Hub Foundation" />
-          </div>
-          <span className="collaboration-x">×</span>
-          <div className="org-logo">
-            <img src="birac_logo.png" alt="Partner Organization" />
-          </div>
-        </motion.div>
-
         {/* Event Date Text */}
         <motion.p
           className="event-date-text"
@@ -44,41 +28,6 @@ const Hero = () => {
         >
           The bubble is going to burst on{' '}
           <span className="date-highlight">December 1</span>!
-        </motion.p>
-
-        {/* 50 Lakhs Highlight */}
-        <motion.div
-          className="hero-highlight"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9 }}
-        >
-          <div className="highlight-wrapper">
-            <span className="highlight-badge-text">ELIGIBLE FOR</span>
-            <h2 className="highlight-amount">
-              <span className="amount-number">50</span>
-              <span className="amount-text">LAKHS!</span>
-            </h2>
-          </div>
-        </motion.div>
-
-        {/* Birac Tagline - NEW */}
-        <motion.p
-          className="birac-tagline"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.0 }}
-        >
-          From Birac, Per startup
-        </motion.p>
-
-        <motion.p
-          className="hero-terms"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1 }}
-        >
-          * Terms and conditions applied
         </motion.p>
 
         {/* Tagline */}

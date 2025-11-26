@@ -6,7 +6,6 @@ import Hero from './components/Hero';
 import Categories from './components/Categories';
 import ProjectDomains from './components/ProjectDomains';
 import SharkTank from './components/SharkTank';
-import FoodFest from './components/FoodFest';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
       <Categories />
       <ProjectDomains />
       <SharkTank />
-      <FoodFest />
       <Footer />
     </div>
   );

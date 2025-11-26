@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaRocket, FaHandshake, FaUtensils } from 'react-icons/fa';
+import { FaRocket, FaHandshake} from 'react-icons/fa';
 import './Categories.css';
 
 const Categories = () => {
@@ -16,12 +16,6 @@ const Categories = () => {
       title: 'Shark Tank',
       description: 'Pitch your innovative ideas to industry experts and investors. Transform your vision into reality with mentorship and funding opportunities.',
       link: '#shark-tank',
-    },
-    {
-      icon: <FaUtensils />,
-      title: 'Food Fest',
-      description: 'A vibrant food festival for all attendees. Enjoy delicious cuisines, fun food stalls, and a lively ambience throughout the event.',
-      link: '#food-fest',
     },
   ];
 
