@@ -18,7 +18,7 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#categories' },
-    { name: 'Domains', href: '#project-expo' },
+    { name: 'Project Expo', href: '#project-expo' },
     { name: 'Shark Tank', href: '#shark-tank' },
     { name: 'Food Fest', href: '#food-fest' },
   ];

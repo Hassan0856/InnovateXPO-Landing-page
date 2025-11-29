@@ -32,7 +32,7 @@
 }
 
 .navbar-logo img {
-  height: 150px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 2px 8px rgba(59, 130, 246, 0.4));

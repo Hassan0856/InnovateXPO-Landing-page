@@ -1,0 +1,67 @@
+/* src/components/FullscreenPreloader.css */
+
+.fp-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000; /* or match your hero bg */
+}
+
+/* Fade & scale animation for logo + progress */
+@keyframes fp-fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fp-logo-wrapper {
+  width: clamp(200px, 50vw, 600px);
+  height: auto;
+  animation: fp-fadeInScale 800ms ease-out;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.fp-logo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.fp-progress-container {
+  width: min(400px, 80vw);
+  animation: fp-fadeInScale 800ms ease-out 200ms backwards;
+}
+
+.fp-progress-bar-bg {
+  height: 2px;
+  background: rgba(39, 39, 42, 0.9);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.fp-progress-bar-fill {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 999px;
+  transition: width 200ms ease-out;
+}
+
+.fp-progress-text {
+  margin-top: 0.75rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+}

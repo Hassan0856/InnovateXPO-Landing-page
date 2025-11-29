@@ -19,19 +19,33 @@ const Hero = () => {
           <h1 className="event-name">InnovateXpo</h1>
         </motion.div>
 
-        {/* Organization Logos Collaboration */}
+        {/* Organization Logos in Triangle Formation */}
         <motion.div
-          className="org-collaboration"
+          className="org-collaboration-triangle"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          <div className="org-logo">
-            <img src="SUKHF_logo.png" alt="SU Knowledge Hub Foundation" />
+          {/* Top Logo */}
+          <div className="triangle-top">
+            <div className="org-logo">
+              <img src="SUKHF_logo.png" alt="SU Knowledge Hub Foundation" />
+            </div>
           </div>
-          <span className="collaboration-x">×</span>
-          <div className="org-logo">
-            <img src="birac_logo.png" alt="Partner Organization" />
+
+          {/* Center X */}
+          <div className="triangle-center">
+            <span className="collaboration-x">×</span>
+          </div>
+
+          {/* Bottom Two Logos */}
+          <div className="triangle-bottom">
+            <div className="org-logo">
+              <img src="birac_logo.png" alt="Birac" />
+            </div>
+            <div className="org-logo">
+              <img src="MSME_logo.png" alt="MSME" />
+            </div>
           </div>
         </motion.div>
 
@@ -43,7 +57,7 @@ const Hero = () => {
           transition={{ delay: 0.7 }}
         >
           The bubble is going to burst on{' '}
-          <span className="date-highlight">December 1</span>!
+          <span className="date-highlight">December 4</span>!
         </motion.p>
 
         {/* 50 Lakhs Highlight */}
@@ -54,7 +68,7 @@ const Hero = () => {
           transition={{ delay: 0.9 }}
         >
           <div className="highlight-wrapper">
-            <span className="highlight-badge-text">ELIGIBLE FOR</span>
+            <span className="highlight-badge-text">Shortlisted startups get assistance to apply for funding upto</span>
             <h2 className="highlight-amount">
               <span className="amount-number">50</span>
               <span className="amount-text">LAKHS!</span>
@@ -62,14 +76,14 @@ const Hero = () => {
           </div>
         </motion.div>
 
-        {/* Birac Tagline - NEW */}
+        {/* Birac Tagline */}
         <motion.p
           className="birac-tagline"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.0 }}
         >
-          From Birac, Per startup
+          Per startup
         </motion.p>
 
         <motion.p
